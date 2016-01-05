@@ -1,14 +1,28 @@
 {
   "name": "wait-run",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wait for a file or directory to change then run a command",
   "main": "index.js",
   "scripts": {},
-  "author": "Rick Wong <rick@webambition.nl>",
+  "author": "Rick Wong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RickWong/wait-run.git"
+  },
+  "homepage": "https://github.com/RickWong/wait-run",
   "license": "BSD-3-Clause",
   "dependencies": {
     "commander": "2.9.0",
     "debug": "2.2.0",
     "gaze": "0.5.2"
-  }
+  },
+  "keywords": [
+    "wait",
+    "file",
+    "directory",
+    "run",
+    "command",
+    "script",
+    "cli"
+  ]
 }
