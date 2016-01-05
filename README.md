@@ -1,6 +1,8 @@
 # wait-run
 
-Wait for a file or directory to change then run a command. The watched file or directory does not have to exist yet.
+[![version](https://img.shields.io/npm/v/wait-run.svg)](https://npmjs.org/package/wait-run) ![license](https://img.shields.io/npm/l/wait-run.svg) ![installs](https://img.shields.io/npm/dt/wait-run.svg)
+
+Wait for a file or directory to change then run a command once. The watched file or directory does not have to exist yet.
 
 Heavily based on the wonderful [watch-run](https://github.com/queckezz/watch-run/blob/master/bin/watch) by [@queckezz](https://twitter.com/queckezz).
 
@@ -13,7 +15,7 @@ npm install -g wait-run
 ## Usage
 
 ```bash
-wait-run --pattern '*.*' -- say hello
+wait-run --pattern '*.*' -- say hello    # waits for any change in cwd then runs once.
 ```
 
 ## License
