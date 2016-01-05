@@ -3,11 +3,10 @@
 /**
  * Module dependencies.
  */
-var exec = require('child_process').exec
-var debug = require('debug')('watch')
-var program = require('commander')
-var join = require('path').join
-var Gaze = require('gaze').Gaze
+var passthru = require('passthru');
+var program = require('commander');
+var join = require('path').join;
+var Gaze = require('gaze').Gaze;
 var delay = 0;
 
 var list = function(val) {
@@ -57,6 +56,7 @@ var run = false;
  */
 if (program.initial) {
 	execute();
+	run = false;
 }
 
 /**
@@ -85,14 +85,7 @@ function execute(event, path) {
 	run = true;
 
 	setTimeout(function() {
-		exec(command, function(err, stdout, stderr) {
-			if (stderr) {
-				console.log(stderr);
-			}
-			if (stdout) {
-				console.log(stdout);
-			}
-
+		passthru(command, [], function (err) {
 			if (event) {
 				process.exit(err);
 			}
