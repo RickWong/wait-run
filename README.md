@@ -6,6 +6,8 @@ Wait for a file or directory to change or appear, then run a command once. The w
 
 Heavily based on the wonderful [watch-run](https://github.com/queckezz/watch-run) by [@queckezz](https://twitter.com/queckezz).
 
+Simply need to wait for a file/directory? Use [just-wait](https://github.com/download/just-wait) by [@Download](https://twitter.com/stijndewitt) which is a fork of wait-run. It allows you to chain `&&` commands.
+
 ## Installation
 
 ```bash
