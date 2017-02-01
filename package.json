@@ -1,6 +1,6 @@
 {
   "name": "wait-run",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Wait for a file or directory to change then run a command",
   "main": "index.js",
   "scripts": {},
